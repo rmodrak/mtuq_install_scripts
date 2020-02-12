@@ -2,11 +2,12 @@
 Installing MTUQ on chinook
 --------------------------
 
-To install MTUQ on chinook, try running this script. If all goes well, a
-virtual environment will be created that can be used during the current 
-session and any subsequent sessions. The virtual environment will be 
-"editable", which means that anytime changes are made the MTUQ source code, 
-they will go into effect immediately without having to reinstall anything.
+To install MTUQ on chinook, clone the mtuq_install_scripts repository and run 
+chinook/install.bash. If all goes well, a virtual environment will be created 
+that can be used during the current session and any subsequent sessions. The
+virtual environment will be "editable", which means that anytime changes are 
+made to the MTUQ source code, they go into effect immediately without having 
+to reinstall anything.
 
 
 NOTES 
