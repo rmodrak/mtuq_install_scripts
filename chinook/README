@@ -21,10 +21,10 @@ administrators, hence why this script uses virtualenv.)
 script fails, try `module purge` and rerun `install.bash`.
 
 - For creating figures, MTUQ automatically uses Generic Mapping Tools (GMT) 
-executables if present on the system path.  Otherwise, MTUQ will fallback to 
+executables if present on the system path.  Otherwise, MTUQ will fall back to 
 ObsPy, which has known beachball plotting bugs.  We urge users to install
-GMT version 6.0.1 or greater.  Currently, GMT installation is not included 
-out by this script, so must be performed manually.
+GMT version 6.0.1 or greater.  Currently, GMT installation is not carried out
+by this script, and so must be performed manually.
 
 
 
