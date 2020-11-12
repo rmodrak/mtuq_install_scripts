@@ -56,8 +56,11 @@ fi
 
 
 # load system modules
-module load toolchain/pic-intel/2019b
-module load lang/Python/3.7.0-pic-intel-2019b
+module load toolchain/pic-intel/2016b
+module load lang/Python/3.5.2-pic-intel-2016b
+
+#module load toolchain/pic-intel/2019b
+#module load lang/Python/3.7.0-pic-intel-2019b
 
 
 # activate virutal environment

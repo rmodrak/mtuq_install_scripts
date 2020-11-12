@@ -55,10 +55,17 @@ fi
 #module load geo/GMT/6.1.1-pic-intel-2016b
 #module unload lang/Python/2.7.12-pic-intel-2016b
 
+# NOTES ON PYTHON
+# - for now we are using an outdated version of Python
+# - using the most up-to-date version of Python results in MPI errors
+#   when examples/SerialGridSearch.DoubleCouple.py is run from the login node
 
-# load system modules
-module load toolchain/pic-intel/2019b
-module load lang/Python/3.7.0-pic-intel-2019b
+module load toolchain/pic-intel/2016b
+module load lang/Python/3.5.2-pic-intel-2016b
+
+#module load toolchain/pic-intel/2019b
+#module load lang/Python/3.7.0-pic-intel-2019b
+
 
 
 # create virutal environment
