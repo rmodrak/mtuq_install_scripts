@@ -14,9 +14,9 @@ NOTES
 
 - This installation script uses virtualenv, which is incompatible with 
 conda. If conda executables are found on the system path, installation will
-abort. (On chinook, an advantage of virtualenv over conda is that there is less 
+abort. On chinook, an advantage of virtualenv over conda is that there is less 
 potential for conflict with the "toolchains" provided by the system
-administrators, hence why this script uses virtualenv.)
+administrators.
 
 - It is best to run this script from a clean starting environment.  If the
 script fails, try `module purge` and rerun `install.bash`.

@@ -47,20 +47,8 @@ then
 fi
 
 
-# NOTES ON GMT
-# - GMT may have to rebuilt using intel-2019b?
-# - load GMT modules first to workaround Python conflict
-
-#module load geo/GMT/6.1.1-pic-intel-2016b
-#module unload lang/Python/2.7.12-pic-intel-2016b
-
-
-# load system modules
-module load toolchain/pic-intel/2016b
-module load lang/Python/3.5.2-pic-intel-2016b
-
-#module load toolchain/pic-intel/2019b
-#module load lang/Python/3.7.0-pic-intel-2019b
+module load toolchain/pic-intel/2019b
+module load lang/Python/3.7.0-pic-intel-2019b
 
 
 # activate virutal environment

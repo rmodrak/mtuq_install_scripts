@@ -3,6 +3,31 @@
 # Creates MTUQ virtual environment on chinook
 
 
+# KNOWN ISSIES
+
+#
+# 1. Running examples/SerialGridSearch.DoubleCouple.py run from the login node 
+#    results in errors
+#
+
+#
+# 2. Standard SLURM interactive jobs do not work on chinook.  In other words, 
+#
+#   >> salloc -p debug --nodes=1 --time=30
+#
+#   does not work as expected.
+#
+
+#
+# 3. As a workaround, one can create a nonstandard interactive job using
+#
+#    >> srun -p debug --nodes=1 --exclusive --pty /bin/bash
+#
+#    In this case, however, examples/SerialGridSearch.DoubleCouple.py    
+#    fails with SLURM errors
+#
+
+
 if [[ ! $HOSTNAME == chinook* ]];
 then
     echo ""
@@ -49,22 +74,11 @@ else
 fi
 
 # NOTES ON GMT
-# - GMT may have to rebuilt using intel-2019b?
-# - load GMT modules first to workaround Python conflict
-
+# - GMT may have to rebuilt using intel-2019b ?
 #module load geo/GMT/6.1.1-pic-intel-2016b
-#module unload lang/Python/2.7.12-pic-intel-2016b
 
-# NOTES ON PYTHON
-# - for now we are using an outdated version of Python
-# - using the most up-to-date version of Python results in MPI errors
-#   when examples/SerialGridSearch.DoubleCouple.py is run from the login node
-
-module load toolchain/pic-intel/2016b
-module load lang/Python/3.5.2-pic-intel-2016b
-
-#module load toolchain/pic-intel/2019b
-#module load lang/Python/3.7.0-pic-intel-2019b
+module load toolchain/pic-intel/2019b
+module load lang/Python/3.7.0-pic-intel-2019b
 
 
 
